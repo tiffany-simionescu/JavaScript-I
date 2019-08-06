@@ -133,3 +133,11 @@ console.log(parent.child.speak());
 
 // Have the grandchild speak
 console.log(parent.child.grandchild.speak());
+
+// ANOTHER SOLUTION FOR SPEAK METHOD
+// Reduces Repetative Code
+const toSpeak = function(a) {
+  return `Hello, my name is ${a.name}.`;
+};
+
+console.log(toSpeak(parent));
